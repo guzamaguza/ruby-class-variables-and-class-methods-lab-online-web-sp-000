@@ -34,32 +34,11 @@ class Song
 
   #class method below
   def self.genre_count
-    gen_count_hist = {}
-    if gen_count_hist.include?(@genre)
-      gen_count_hist[@genre] << @genre
-    else
-      gen_count_hist[@genre] = []
-      gen_count_hist[@genre] << @genre
-    end
-    return gen_count_hist
+        @@genres.inject(Hash.new(0)) {|total, i| total[i] += 1; total }
   end
-
 
   def self.artist_count
         @@artists.inject(Hash.new(0)) {|total, i| total[i] += 1 ; total }
-  end
-
-    if artist_count_hist.include?(@artist)
-      artist_count_hist[@genre] << @genre
-    else
-      artist_count_hist[@genre] = []
-      artist_count_hist[@genre] << @genre
-    end
-    retHash_art = []
-    artist_count_hist.each do |k,v|
-      retHash_art[k] = artist_count_hist.values.count
-    end
-      return retHash_art
   end
 
 end
