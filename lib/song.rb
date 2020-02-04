@@ -53,7 +53,7 @@ class Song
       artist_count_hist[@genre] = []
       artist_count_hist[@genre] << @genre
     end
-
+    retHash_art = []
     artist_count_hist.each do |k,v|
       retHash_art[k] = artist_count_hist.values.count
     end
