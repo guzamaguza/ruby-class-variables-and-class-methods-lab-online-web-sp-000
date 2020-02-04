@@ -4,12 +4,9 @@ class Song
   @@genres = [] #initialize a Class Variable set to an empty array
   @@artists = [] #initialize a Class Variable set to an empty array
 
-  #class << self
     attr_accessor :name
     attr_accessor :artist
     attr_accessor :genre
-  #end
-
 
   def initialize(name, artist, genre)
     @name = name
