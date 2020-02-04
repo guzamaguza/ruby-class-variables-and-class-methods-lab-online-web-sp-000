@@ -46,7 +46,9 @@ class Song
 
 
   def self.artist_count
-    artist_count_hist = {}
+        @@artists.inject(Hash.new(0)) {|total, i| total[i] += 1 ; total }
+  end 
+
     if artist_count_hist.include?(@artist)
       artist_count_hist[@genre] << @genre
     else
