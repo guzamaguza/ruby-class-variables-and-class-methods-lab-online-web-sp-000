@@ -55,7 +55,7 @@ class Song
     end
 
     artist_count_hist.each do |k,v|
-      retHash_art[k] = artist_count_hist.values.count 
+      retHash_art[k] = artist_count_hist.values.count
     end
       return artist_count_hist
   end
