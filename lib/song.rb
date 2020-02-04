@@ -32,7 +32,7 @@ class Song
 
   #class method below
   def self.artists
-    @@artists
+    @@artists = @@artists.uniq 
   end
 
   #class method below
