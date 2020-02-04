@@ -32,7 +32,7 @@ class Song
 
   #class method below
   def self.artists
-    @@artists = @@artists.uniq #remove duplicates in the array by using .uniq 
+    @@artists = @@artists.uniq #remove duplicates in the array by using .uniq
   end
 
   #class method below
