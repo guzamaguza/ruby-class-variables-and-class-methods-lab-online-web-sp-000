@@ -5,7 +5,7 @@ class Song
   @@artists = [] #initialize a Class Variable set to an empty array
 
   class << self
-    attr_accessor :things :artist :genre
+    attr_accessor :name :artist :genre
   end
 
 
