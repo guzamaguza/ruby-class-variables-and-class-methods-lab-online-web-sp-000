@@ -1,14 +1,13 @@
 class Song
   #attr_accessor :name :artist :genre
+  @@count = 0 #initialize a Class Variable set to zero
+  @@genres = [] #initialize a Class Variable set to an empty array
+  @@artists = [] #initialize a Class Variable set to an empty array
 
   class << self
     attr_accessor :things :artist :genre
   end
 
-
-  @@count = 0 #initialize a Class Variable set to zero
-  @@genres = [] #initialize a Class Variable set to an empty array
-  @@artists = [] #initialize a Class Variable set to an empty array
 
   def initialize(name, artist, genre)
     @name = name
