@@ -1,5 +1,10 @@
 class Song
-  attr_accessor :name :artist :genre
+  #attr_accessor :name :artist :genre
+
+  class << self
+    attr_accessor :things :artist :genre
+  end
+
 
   @@count = 0 #initialize a Class Variable set to zero
   @@genres = [] #initialize a Class Variable set to an empty array
